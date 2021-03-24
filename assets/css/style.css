@@ -1,0 +1,20 @@
+
+.jumbotron {
+    background-color: black;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+h2 {
+    margin-left: 1%;
+}
+
+.btn {
+    background-color: #6E44FF;
+    color: #fff;
+}
+
