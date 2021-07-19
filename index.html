@@ -20,13 +20,14 @@
 <body>
     <header>
         <div class="jumbotron jumbotron-fluid">
-            <div class="container">
+            <div class="navbar">
               <h1 class="display-4">Weather Dashboard</h1>
             </div>
           </div>
     </header>
     
     <main>
+        <div class="container">
         <section>
             <h3>Search for a City:</h3>
             <div class="input-group mb-3 col-3">
@@ -69,6 +70,7 @@
                 </div>
             </div>
         </section>
+        <section>
         <div class="row">
             <div class="col-12">
                 <h3>5-Day Forecast:</h3>
@@ -81,6 +83,8 @@
             <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
             <div class="col forecast bg-primary text-white ml-3 mb-3 rounded"></div>
         </div>
+        </section>
+    </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
