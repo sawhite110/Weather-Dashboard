@@ -14,7 +14,7 @@ SO THAT I can plan a trip accordingly
 
 * Below you will see a screenshot of how the application looks when you do a search for a city of your choice.
 
-![“screenshot0”](./assets/screenshot0.png)
+![“screenshot1”](./images/screenshot1.png)
 
 *  You have the ability to clear the search, search for a new city, and keep a list of searched cities with their 5-Day Forecast.
 
