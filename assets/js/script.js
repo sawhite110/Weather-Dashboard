@@ -70,7 +70,7 @@ clearSearchEl.addEventListener("click", function () {
 searchEl.addEventListener("click", function (event) {
   var city = currentCityEl.value;
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       city +
       "&units=imperial&appid=" +
       weather.apiKey,
@@ -95,7 +95,7 @@ searchEl.addEventListener("click", function (event) {
       document.querySelector(".city").innerText = name;
       document.querySelector(".date").innerText = today;
       document.querySelector(".icon").src =
-        "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+        "https://openweathermap.org/img/wn/" + icon + "@2x.png";
       document.querySelector(".description").innerText = description;
       document.querySelector(".temp").innerText = temp + " °F";
       document.querySelector(".humidity").innerText =
@@ -114,7 +114,7 @@ searchEl.addEventListener("click", function (event) {
       console.log("Something went wrong!", error);
     });
   fetch(
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       city +
       "&units=imperial&appid=" +
       weather.apiKey,
@@ -136,9 +136,9 @@ searchEl.addEventListener("click", function (event) {
 });
 
 // 5 Day forecast
-// var cityID = response.data.id;
+var cityID = response.data.id;
 var forecastQueryURL =
-"http://api.openweathermap.org/data/2.5/forecast?q=" +
+"https://api.openweathermap.org/data/2.5/forecast?q=" +
 city +
 "&units=imperial&appid=" +
 weather.apiKey;
